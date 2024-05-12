@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<header>
+	<h1>The U.P.A. Project</h1>
+	<button>Make a suggestion!</button>
+</header>
+
+<main>
+	<h3>Why join us?</h3>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, iste.</p>
+</main>
+
+<aside>
+	<h3>Some groups inside</h3>
+	<p>TODO: QUERY FOR RANDOM GROUPS</p>
+</aside>
+
+<style>
+	/*TODO*/
+</style>

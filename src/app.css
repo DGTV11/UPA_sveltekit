@@ -1,0 +1,44 @@
+:root {
+	--jigglypuff-pink: #f2d9e1; /*for flag ref only*/
+	--alpha: 1;
+
+	--black: #000;
+	--white: #fff;
+
+	--base-primary: 50, 50%;
+	--primary-1: hsla(var(--base-primary), var(--lightness, 90%), var(--alpha));
+	--primary-2: hsla(var(--base-primary), var(--lightness, 80%), var(--alpha));
+	--primary-3: hsla(var(--base-primary), var(--lightness, 70%), var(--alpha));
+	--primary-4: hsla(var(--base-primary), var(--lightness, 60%), var(--alpha));
+	--primary-5: hsla(var(--base-primary), var(--lightness, 50%), var(--alpha));
+	--primary-6: hsla(var(--base-primary), var(--lightness, 40%), var(--alpha));
+	--primary-7: hsla(var(--base-primary), var(--lightness, 30%), var(--alpha));
+	--primary-8: hsla(var(--base-primary), var(--lightness, 20%), var(--alpha));
+	--primary-9: hsla(var(--base-primary), var(--lightness, 10%), var(--alpha));
+
+	--base-secondary: 0, 0%;
+	--secondary-1: hsla(var(--base-secondary), var(--lightness, 90%), var(--alpha));
+	--secondary-2: hsla(var(--base-secondary), var(--lightness, 80%), var(--alpha));
+	--secondary-3: hsla(var(--base-secondary), var(--lightness, 70%), var(--alpha));
+	--secondary-4: hsla(var(--base-secondary), var(--lightness, 60%), var(--alpha));
+	--secondary-5: hsla(var(--base-secondary), var(--lightness, 50%), var(--alpha));
+	--secondary-6: hsla(var(--base-secondary), var(--lightness, 40%), var(--alpha));
+	--secondary-7: hsla(var(--base-secondary), var(--lightness, 30%), var(--alpha));
+	--secondary-8: hsla(var(--base-secondary), var(--lightness, 20%), var(--alpha));
+	--secondary-9: hsla(var(--base-secondary), var(--lightness, 10%), var(--alpha));
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui;
+}
