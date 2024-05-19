@@ -1,12 +1,17 @@
-<header>
+<section id="hero">
 	<h1>The U.P.A. Project</h1>
-	<button>Make a suggestion!</button>
-</header>
+	<h4>An <em>unofficial</em> Pokemon AU</h4>
+	<button
+		on:click={() => {
+			location.href = '/suggestions';
+		}}>Make a suggestion!</button
+	>
+</section>
 
-<main>
+<section>
 	<h3>Why join us?</h3>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, iste.</p>
-</main>
+</section>
 
 <aside>
 	<h3>Some groups inside</h3>
@@ -14,5 +19,7 @@
 </aside>
 
 <style>
-	/*TODO*/
+	#hero {
+		grid-column: 1 / -1;
+	}
 </style>

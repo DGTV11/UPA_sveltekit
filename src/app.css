@@ -42,3 +42,49 @@ body {
 	margin: 0;
 	font-family: system-ui;
 }
+
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2.5rem;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	font-size: 1.25rem;
+}
+h6 {
+	font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+main > section {
+	padding: 2rem 3rem;
+}
+main > section > h2 {
+	font-size: 3.5rem;
+}
+main > aside {
+	padding: 1rem;
+}
+
+#hero {
+	background-color: var(--primary-3);
+	height: 90vh;
+	display: grid;
+	place-content: center;
+}
+
+button {
+	border-radius: 25px;
+	font-size: 2rem;
+	padding: 0.5em 2em;
+}
