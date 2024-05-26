@@ -7,9 +7,9 @@
 </script>
 
 <Hero></Hero>
-<section id="timeline">
-	{#each timeline as event, i}
-		<article style={`--i: ${i}`}>
+<section>
+	{#each timeline as event}
+		<article>
 			<header>
 				<h3>{event.title}</h3>
 			</header>
@@ -28,7 +28,7 @@
 </Aside>
 
 <style>
-	#timeline {
+	section {
 		background-color: var(--primary-3);
 		/*padding-right: 0;*/
 	}
@@ -46,7 +46,7 @@
 		padding-left: 8rem;
 	}
 
-	#timeline header {
+	header {
 		background-color: var(--primary-2);
 		border-top-left-radius: 1.5rem;
 		border-bottom-left-radius: 1.5rem;
