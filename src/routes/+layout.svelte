@@ -1,7 +1,7 @@
 <script>
 	import '../app.css';
-	import Footer from './Footer.svelte';
-	import Header from './Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import Header from '$lib/components/Navigation.svelte';
 </script>
 
 <div>

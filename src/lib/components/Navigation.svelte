@@ -25,6 +25,7 @@
 		position: fixed;
 		top: 0.5rem;
 		height: 2rem;
+		z-index: 100;
 	}
 
 	a {

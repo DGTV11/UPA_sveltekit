@@ -1,3 +1,7 @@
+<script>
+	import Aside from '$lib/components/Aside.svelte';
+</script>
+
 <section id="hero">
 	<h1>The U.P.A. Project</h1>
 	<h4>An <em>unofficial</em> Pokemon AU</h4>
@@ -13,10 +17,10 @@
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, iste.</p>
 </section>
 
-<aside>
+<Aside>
 	<h3>Some groups inside</h3>
 	<p>TODO: QUERY FOR RANDOM GROUPS</p>
-</aside>
+</Aside>
 
 <style>
 	#hero {
