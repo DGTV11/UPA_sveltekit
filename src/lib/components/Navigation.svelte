@@ -4,10 +4,11 @@
 	const routes = [
 		{ href: '/', label: 'Home' },
 		{ href: '/suggestions', label: 'Suggestions' },
-		{ href: '/voting', label: 'Voting' },
 		{ href: '/history', label: 'History' },
 		{ href: '/news', label: 'News' }
 	];
+
+	const authroutes = [{ href: '/login', label: 'Login' }];
 </script>
 
 <header>
@@ -18,12 +19,23 @@
 			>
 		{/each}
 	</nav>
+	<nav>
+		{#each authroutes as route}
+			<a href={route['href']} class:active={$page.url.pathname === route['href']}
+				>{route['label']}</a
+			>
+		{/each}
+	</nav>
 </header>
 
 <style lang="postcss">
 	header {
+		display: flex;
+		justify-content: space-between;
 		position: fixed;
 		top: 0.5rem;
+		left: 0;
+		right: 0;
 		height: 2rem;
 		z-index: 100;
 	}

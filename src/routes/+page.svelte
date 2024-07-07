@@ -1,15 +1,12 @@
 <script>
+	import { goto } from '$app/navigation';
 	import Aside from '$lib/components/Aside.svelte';
 </script>
 
 <section id="hero">
 	<h1>The U.P.A. Project</h1>
 	<h4>An <em>unofficial</em> Pokemon AU</h4>
-	<button
-		on:click={() => {
-			location.href = '/suggestions';
-		}}>Make a suggestion!</button
-	>
+	<button on:click={() => goto('/suggestions')}>Make a suggestion!</button>
 </section>
 
 <section>

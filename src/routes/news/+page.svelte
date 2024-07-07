@@ -1,4 +1,5 @@
 <script>
+	// @ts-nocheck
 	import Article from '$lib/components/Article.svelte';
 
 	import { news_articles } from './data.js';

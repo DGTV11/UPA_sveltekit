@@ -57,7 +57,7 @@ export const timeline = [
 	{
 		title: 'The Great Relocation',
 		content:
-			"Disenchanted with the tyrant's regime, devoted U.P.A. members discreetly relocated to a distant location and made it their new headquarters. Learning from their past mistakes, they avoided previous flaws in their laws. There, they began constructing infrastructure and fortifications."
+			"Disenchanted with the tyrant's regime, devoted U.P.A. members discreetly relocated to a distant location and made it their new headquarters. Learning from their past mistakes, they avoided previous flaws in their laws. There, they began constructing new infrastructure and fortifications."
 	},
 	{
 		title: 'The U.P.A. Power Struggle',
@@ -72,7 +72,7 @@ export const timeline = [
 	{
 		title: 'The Fall of U.P.A. West',
 		content:
-			"While the conferences were going on, the empire U.P.A. West allyed with decided to seize the golden opportunity and forcibly annex U.P.A. West. This was suspected to be the culmination of the tyrant's grand scheme to prevent the U.P.A. from taking back the activity centre from U.P.A. West."
+			"While the conferences were going on, the empire U.P.A. West allied with decided to seize the golden opportunity and forcibly annex U.P.A. West. This was suspected to be the culmination of the tyrant's grand scheme to prevent the U.P.A. from taking back the activity centre from U.P.A. West."
 	}
 ];
 
