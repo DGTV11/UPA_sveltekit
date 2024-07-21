@@ -83,7 +83,7 @@ main > aside {
 	place-content: center;
 }
 
-button {
+button.to-suggestions {
 	border-radius: 25px;
 	font-size: 2rem;
 	padding: 0.5em 2em;

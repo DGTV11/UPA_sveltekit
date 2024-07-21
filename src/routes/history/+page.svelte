@@ -5,11 +5,14 @@
 
 	import Hero from './Hero.svelte';
 	import { old_cap_images, upa_images, timeline } from './data.js';
+
+	export let data;
+	$: ({history_timeline} = data);
 </script>
 
 <Hero></Hero>
 <section id="history">
-	{#each timeline as { title, content }}
+	{#each history_timeline as { title, content }}
 		<Article {title} {content}></Article>
 	{/each}
 </section>

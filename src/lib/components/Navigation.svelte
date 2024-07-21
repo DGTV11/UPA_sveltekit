@@ -8,7 +8,7 @@
 		{ href: '/news', label: 'News' }
 	];
 
-	const authroutes = [{ href: '/login', label: 'Login' }];
+	const authroutes = [{ href: '/auth', label: 'Auth' }];
 </script>
 
 <header>

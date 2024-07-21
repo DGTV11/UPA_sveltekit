@@ -6,7 +6,7 @@
 <section id="hero">
 	<h1>The U.P.A. Project</h1>
 	<h4>An <em>unofficial</em> Pokemon AU</h4>
-	<button on:click={() => goto('/suggestions')}>Make a suggestion!</button>
+	<button class="to-suggestions" on:click={() => goto('/suggestions')}>Make a suggestion!</button>
 </section>
 
 <section>
