@@ -7,8 +7,6 @@
 		{ href: '/history', label: 'History' },
 		{ href: '/news', label: 'News' }
 	];
-
-	const authroutes = [{ href: '/auth', label: 'Auth' }];
 </script>
 
 <header>
@@ -20,11 +18,11 @@
 		{/each}
 	</nav>
 	<nav>
-		{#each authroutes as route}
-			<a href={route['href']} class:active={$page.url.pathname === route['href']}
-				>{route['label']}</a
-			>
-		{/each}
+		{#if $page.data.session?.user}
+			<a href="/auth/logout" class:active={$page.url.pathname === '/auth/logout'}>Logout</a>
+		{:else}
+			<a href="/auth" class:active={$page.url.pathname === '/auth'}>Login</a>
+		{/if}
 	</nav>
 </header>
 

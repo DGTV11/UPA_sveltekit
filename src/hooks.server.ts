@@ -4,6 +4,10 @@ import { sequence } from '@sveltejs/kit/hooks'
 
 import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public'
 
+const PROTECTED_ROUTES = [
+  {label: 'profile', href: '/profile', roles: ['authenticated']},
+]
+
 const supabase: Handle = async ({ event, resolve }) => {
   /**
    * Creates a Supabase client specific to this server request.
@@ -66,13 +70,26 @@ const authGuard: Handle = async ({ event, resolve }) => {
   const { session, user } = await event.locals.safeGetSession()
   event.locals.session = session
   event.locals.user = user
+  const path = event.url.pathname
+  const isProtectedRoute = PROTECTED_ROUTES.some(({href}) => path.startsWith(href))
 
-  if (!event.locals.session && event.url.pathname.startsWith('/private')) {
-    return redirect(303, '/auth')
-  }
+  // if (!event.locals.session && event.url.pathname.startsWith('/private')) {
+  //   return redirect(303, '/auth')
+  // }
 
-  if (event.locals.session && event.url.pathname === '/auth') {
-    return redirect(303, '/private')
+  // if (event.locals.session && event.url.pathname === '/auth') {
+  //   return redirect(303, '/private')
+  // }
+  console.log(event.locals.session)
+
+  if (isProtectedRoute) {
+    const isAuthorised = PROTECTED_ROUTES.some(({href, roles}) => path.startsWith(href) && roles.some((role) => role === event.locals.session?.user.role))
+    
+    if (!isAuthorised) {
+      const fromURL = event.url.pathname + event.url.search
+      const message = "You must be logged in to view this page"
+      return redirect(302, `/auth?redirectto=${fromURL}&message=${encodeURI(message)}`)
+    }
   }
 
   return resolve(event)
